@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 960px 1fr;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.columns {
+  background: #25ad7e;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  color: #E3007f;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'Rock Salt', cursive;
+  color: #E3007f;
+  font-size: 28px;
+}
+
+p {
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  color: #5f5c5e;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 0 25px;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sprite {
+  background: url(../img/sprite.png) no-repeat;
+}
+
+.logo {
+  background-position: 0 0;
+  width: 494px;
+  height: 426px;
+}
+
+.girl {
+  background-position: -269px -699px;
+  width: 283px;
+  height: 256px;
+}
+
+.boy-1 {
+  background-position: 0px -426px;
+  width: 243px;
+  height: 240px;
+  margin-left: 100px;
+}
+
+.boy-2 {
+  background-position: 0px -666px;
+  width: 269px;
+  height: 289px;
+  margin-left: calc(100% - 269px);
+}
+
+.flower {
+  background-position: -241px -438px;
+  width: 72px;
+  height: 49px;
+  margin-left: 180px;
+}
+
+.grass-1 {
+  background-position: -349px -438px;
+  width: 72px;
+  height: 49px;
+  margin-left: 280px;
+}
+
+.grass-2 {
+  background-position: -243px -514px;
+  width: 108px;
+  height: 66px;
+  margin-left: 220px;
+}
+
+.butterfly-small {
+  background-position: -241px -598px;
+  width: 101px;
+  height: 89px;
+  margin-left: 50px;
+}
+
+.butterfly-big {
+  background-position: -361px -498px;
+  width: 167px;
+  height: 188px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
