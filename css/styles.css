@@ -10,7 +10,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 960px 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 main {
@@ -20,21 +20,16 @@ main {
   justify-content: space-around;
 }
 
-.columns {
-  background: #25ad7e;
-}
+h1, h2, p { text-align: center; }
 
-h1 {
+h1, h2 {
   font-family: 'Rock Salt', cursive;
   color: #E3007f;
-  font-size: 48px;
 }
 
-h2 {
-  font-family: 'Rock Salt', cursive;
-  color: #E3007f;
-  font-size: 28px;
-}
+h1 { font-size: 48px; }
+
+h2 { font-size: 28px; }
 
 p {
   font-family: 'Fira Code', monospace;
@@ -48,15 +43,9 @@ img {
   margin: 0 25px;
 }
 
-.left, .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+.columns { background: #25ad7e; }
 
-.sprite {
-  background: url(../img/sprite.png) no-repeat;
-}
+.sprite { background: url(../img/sprite.png) no-repeat; }
 
 .logo {
   background-position: 0 0;
@@ -68,54 +57,100 @@ img {
   background-position: -269px -699px;
   width: 283px;
   height: 256px;
+  bottom: 0;
+  left: 0;
 }
 
 .boy-1 {
   background-position: 0px -426px;
   width: 243px;
   height: 240px;
-  margin-left: 100px;
 }
 
 .boy-2 {
   background-position: 0px -666px;
   width: 269px;
   height: 289px;
-  margin-left: calc(100% - 269px);
-}
-
-.flower {
-  background-position: -241px -438px;
-  width: 72px;
-  height: 49px;
-  margin-left: 180px;
+  bottom: 0;
+  right: 0;
 }
 
 .grass-1 {
   background-position: -349px -438px;
   width: 72px;
   height: 49px;
-  margin-left: 280px;
 }
 
 .grass-2 {
   background-position: -243px -514px;
   width: 108px;
   height: 66px;
-  margin-left: 220px;
 }
 
 .butterfly-small {
   background-position: -241px -598px;
   width: 101px;
   height: 89px;
-  margin-left: 50px;
+}
+
+.flower, .flower-2 {
+  background-position: -241px -438px;
+  width: 72px;
+  height: 49px;
+}
+
+.girl, .boy-2, .flower, .flower-2, .grass-1, .grass-2, .butterfly-small, .butterfly-big {
+  position: absolute;
 }
 
 .butterfly-big {
   background-position: -361px -498px;
   width: 167px;
   height: 188px;
-  margin-left: 150px;
-  margin-top: 50px;
+  top: 3%;
+  left: 4%;
+}
+
+.flower-2 {
+  top: 60%;
+  left: 13%;
+}
+
+.left .grass-1 {
+  top: 41%;
+  left: 13%;
+}
+
+.left .grass-2 {
+  top: 29%;
+  left: 12%;
+}
+
+.left .flower {
+  top: 39%;
+  left: 3%;
+}
+
+.left .butterfly-small {
+  top: 46%;
+  left: 8%;
+}
+
+.right .flower {
+  right: 3%;
+  top: 30%;
+}
+.right .grass-1 {
+  right: 11%;
+  top: 38%;
+}
+
+.right .grass-2 {
+  right: 1%;
+  top: 56%;
+}
+
+.right .butterfly-small {
+  right: 10%;
+  top: 47%;
 }
